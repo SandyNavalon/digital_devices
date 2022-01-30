@@ -1,9 +1,11 @@
 import './App.scss';
-import { DigitalClock } from './components';
+import { Chrono, Countdown, DigitalClock } from './components';
 function App() {
   return (
     <div className="App">
       <DigitalClock/>
+      <Countdown/>
+      <Chrono/>
     </div>
   );
 }
