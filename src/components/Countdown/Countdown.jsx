@@ -25,6 +25,7 @@ const Countdown = () => {
 
     return (
         <div>
+            <h2>Days till my bday</h2>
             <h2>{time}</h2>
         </div>
     );

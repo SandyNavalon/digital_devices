@@ -1,19 +1,40 @@
-import React from 'react';
+import './DigitalClock.scss'
+
 import { useState, useEffect } from 'react';
 
 const DigitalClock = () => {
-    const [clockState, setClockState ] = useState();
+    const [clockStateHours, setClockStateHours ] = useState();
+    const [clockStateMinutes, setClockStateMinutes ] = useState();
 
     useEffect(() => {
         setInterval(() => {
             const date = new Date();
-            setClockState(date.toLocaleTimeString());
+
+            let minutes = date.getMinutes();
+            minutes = minutes > 9 ? minutes : '0' + minutes;
+
+            setClockStateHours(date.getHours());
+            setClockStateMinutes(minutes)
         }, 1000);
     }, []);
 
   return (
   <div className='clock'>
-    <h2>{clockState}</h2>
+    <div className='clock__box'>
+      <div className='clock__box-color'></div>
+        <div className='background-grainy'></div>
+          <div className='clock__count'>
+            <div className='clock__count-insideBorder'></div>
+              <h2 className='clock__count-numbers'>
+                {clockStateHours}:{clockStateMinutes}
+              </h2>
+          </div>
+        <div className='clock__btns'>
+          <span className='clock__btns-btn'></span>
+          <span className='clock__btns-btn'></span>
+          <span className='clock__btns-btn'></span>
+      </div>
+    </div>
   </div>
   );
 };

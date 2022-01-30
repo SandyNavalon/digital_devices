@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="App">
       <DigitalClock/>
-      <Countdown/>
-      <Chrono/>
+      {/* <Countdown/>
+      <Chrono/> */}
     </div>
   );
 }
