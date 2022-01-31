@@ -19,10 +19,11 @@ const DigitalClock = () => {
     }, []);
 
   return (
-  <div className='clock'>
+  <>
+    <div className='clock'>
     <div className='clock__box'>
       <div className='clock__box-color'></div>
-        <div className='background-grainy'></div>
+        {/* <div className='background-grainy'></div> */}
           <div className='clock__count'>
             <div className='clock__count-insideBorder'></div>
               <h2 className='clock__count-numbers'>
@@ -36,6 +37,7 @@ const DigitalClock = () => {
       </div>
     </div>
   </div>
+  </>
   );
 };
 
