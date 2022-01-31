@@ -1,3 +1,5 @@
+import './Chrono.scss'
+
 import { useEffect, useState } from "react"
 
 const Chrono = () => {
@@ -21,13 +23,13 @@ const Chrono = () => {
     }, [timeOn]);
 
         return (
-        <div>
-            <div>
-                <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
-                <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
-                <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
+        <div className='chrono'>
+            <div className='chrono__numbers'>
+                <p>{("0" + Math.floor((time / 60000) % 60)).slice(-2)} : </p>
+                <p>{("0" + Math.floor((time / 1000) % 60)).slice(-2)} : </p>
+                <p>{("0" + ((time / 10) % 100)).slice(-2)}</p>
             </div>
-            <div>
+            <div className='chrono__btns'>
                 {!timeOn && time === 0 && (
                     <button onClick={() => setTimeOn(true)}>Start</button>
                 )}
