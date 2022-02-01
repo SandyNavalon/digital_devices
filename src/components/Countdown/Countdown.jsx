@@ -1,3 +1,5 @@
+import './Countdown.scss'
+
 import { useEffect, useState } from "react";
 
 const Countdown = () => {
@@ -24,9 +26,9 @@ const Countdown = () => {
 
 
     return (
-        <div>
-            <h2>Days till my bday</h2>
-            <h2>{time}</h2>
+        <div onmousedown="party.confetti(this)" className="countdown">
+            <h2 className="countdown__title">Days until my bday</h2>
+            <h2 className="countdown__time">{time}</h2>
         </div>
     );
 }
