@@ -15,7 +15,7 @@ const Countdown = () => {
             let minutes = Math.floor((distance % (1000*60*60)) / (1000*60));
             let seconds = Math.floor((distance % (1000*60)) / 1000);
 
-            setTime(days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's ');
+            setTime(days + 'd ' + hours + 'h ' + minutes + 'm ' + seconds + 's');
 
             if(distance < 0) {
                 clearInterval(x);
@@ -26,7 +26,7 @@ const Countdown = () => {
 
 
     return (
-        <div onmousedown="party.confetti(this)" className="countdown">
+        <div className="countdown">
             <h2 className="countdown__title">Days until my bday</h2>
             <h2 className="countdown__time">{time}</h2>
         </div>

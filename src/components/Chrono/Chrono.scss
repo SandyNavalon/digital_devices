@@ -20,6 +20,7 @@
         width: 200px;
         border-style: none;
         background-image: url('../../assets/backgrounds/grainy-orange.png');
+        box-shadow: #FF6314 0 -6px 8px inset;
         opacity: 95%;
         top: 0;
         bottom: 0;
@@ -50,17 +51,16 @@
         appearance: none;
         font-family: 'Quicksand', sans-serif;
 
-        // border: 1px solid black;
         border-style: none;
         border-radius: 40em;
         box-shadow: #ADCFFF 0 -12px 6px inset;
         box-sizing: border-box;
         color: #000000;
+
         cursor: pointer;
         display: inline-block;
-        font-size: 1.2rem;
+        font-size: 20px;
         font-weight: 700;
-        letter-spacing: -.24px;
         outline: none;
         padding: 1rem 1.3rem;
         text-align: center;
@@ -80,13 +80,6 @@
 
             button:active {
             transform: scale(1.025);
-            }
-
-            @media (min-width: 768px) {
-                button {
-                font-size: 1.5rem;
-                padding: .75rem 2rem;
-                }
             }
     }
 }
