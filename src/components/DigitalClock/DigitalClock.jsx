@@ -22,19 +22,11 @@ const DigitalClock = () => {
   <>
     <div className='clock'>
     <div className='clock__box'>
-      <div className='clock__box-color'></div>
-        {/* <div className='background-grainy'></div> */}
           <div className='clock__count'>
-            <div className='clock__count-insideBorder'></div>
-              <h2 className='clock__count-numbers'>
+              <p className='clock__count-numbers'>
                 {clockStateHours}:{clockStateMinutes}
-              </h2>
+              </p>
           </div>
-        <div className='clock__btns'>
-          <span className='clock__btns-btn'></span>
-          <span className='clock__btns-btn'></span>
-          <span className='clock__btns-btn'></span>
-      </div>
     </div>
   </div>
   </>

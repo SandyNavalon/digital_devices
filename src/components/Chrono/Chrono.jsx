@@ -53,11 +53,6 @@ const Chrono = () => {
                     <button onClick={() => setTimeOn(true)}>Resume</button>
                 )}
             </div>
-
-            {/* <button onClick={() => setTimeOn(true)}>Start</button>
-            <button onClick={() => setTimeOn(false)}>Stop</button>
-            <button onClick={() => setTimeOn(true)}>Resume</button>
-            <button onClick={() => setTime(0)}>Reset</button> */}
         </div>
         );
 };
