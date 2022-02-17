@@ -24,7 +24,7 @@ const DigitalClock = () => {
     <div className='clock__box'>
           <div className='clock__count'>
               <p className='clock__count-numbers'>
-                {clockStateHours}:{clockStateMinutes}
+                {clockStateHours} : {clockStateMinutes}
               </p>
           </div>
     </div>
