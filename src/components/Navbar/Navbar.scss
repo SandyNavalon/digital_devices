@@ -1,3 +1,16 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__home{
+        background-color:transparent;
+        img{
+            width: 30px;
+        }
+    }
+}
+
 .active {
     color: #002345;
     font-weight: bold;
@@ -12,11 +25,11 @@
 
 ul {
     display: flex;
-    justify-content: space-around;
-    align-content: center;
-    list-style: none;
+    justify-content: flex-start;
+    gap: 30px;
 
-    li {
+
+    .nav__btn {
         background-color: rgb(255, 255, 255);
         border: 1px solid black;
 
@@ -54,3 +67,5 @@ ul {
         box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
     }
 }
+
+

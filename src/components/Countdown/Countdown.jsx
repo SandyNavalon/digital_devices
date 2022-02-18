@@ -1,4 +1,4 @@
-import './Countdown.scss'
+import './Countdown.scss';
 
 import { useEffect, useRef, useState } from "react";
 
@@ -12,7 +12,6 @@ const Countdown = () => {
 
     const startCountdown = () => {
         const countdownDate = new Date ('Nov 7, 2022 00:00:00').getTime();
-        
 
         interval = setInterval(() => {
             const now = new Date().getTime();

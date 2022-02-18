@@ -14,8 +14,8 @@ function App() {
         <Route path='/digital-clock' element={<DigitalClock />} />
         <Route path='/chrono' element={<Chrono />} />
         <Route path='/countdown' element={<Countdown />} />
-        {/* <Route path='*' element={<NotFoundPage />} /> */}
       </Routes>
+
     </Router>
   );
 }

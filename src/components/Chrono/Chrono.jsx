@@ -57,4 +57,4 @@ const Chrono = () => {
         );
 };
 
-export default Chrono
+export default Chrono;
